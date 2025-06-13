@@ -97,7 +97,7 @@ Based on the information made available by the security community, we believe th
  - It is likely that hiding the user's agent prevented the attack from triggering.
  - It is possible that the compromised service was not used while the attack was active.
 
-Given the evidence linked from this retrospective, we are classifying this incident as a **near-miss** as we believe the attack was unlikely to have actually caused malicious code to reach user machines through our service.
+Given the evidence linked from this retrospective, we are classifying this incident as a **near-miss** as we believe the attack did not cause malicious code to reach user machines through our service.
 
 ## Notes
 Thank you to Matt Fisher (@mfisher87) for feedback on this report. Though investigation and initial report drafting was mnaul, Anthropic Claude 4 was used to help with final report compilation, primarily for the purposes of formatting and proofreading. Its work was manually validated by the author.
