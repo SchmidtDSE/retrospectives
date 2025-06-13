@@ -101,3 +101,5 @@ Given the evidence linked from this retrospective, we are classifying this incid
 
 ## Notes
 Thank you to Matt Fisher (@mfisher87) for feedback on this report. Though investigation and initial report drafting was mnaul, Anthropic Claude 4 was used to help with final report compilation, primarily for the purposes of formatting and proofreading. Its work was manually validated by the author.
+
+An unrelated project for soil health also used polyfill io but similarly uses cached CDN payloads. It did not have deploys (was archived) prior to the sale of the project to the adversary. Therefore, no retrospective is needed.
