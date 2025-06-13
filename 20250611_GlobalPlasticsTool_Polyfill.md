@@ -14,9 +14,9 @@
 
 **Discovery Date**: June 10, 2025 during routine third-party resource audit.
 
-**Impact**: Currently we believe that there was no compromise of our systems or users.
+**Impact**: None. Currently we believe that there was no compromise of our systems or users though this was classified as a near-miss.
 
-**Status**: Incident closed - no evidence of compromise but preventive measures implemented.
+**Status**: Incident closed as a near-miss but preventive measures implemented.
 
 ## Technical Details
 This supply chain attack relied on injecting malicious code and impacted [hundreds of thousands of hosts including government services](https://censys.com/blog/july-2-polyfill-io-supply-chain-attack-digging-into-the-web-of-compromised-domains). We beelive were not impacted due to privacy protections we put in place for our users but these same measures also prevented our discovery of this near-miss.
