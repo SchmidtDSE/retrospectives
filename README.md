@@ -17,4 +17,4 @@ Reports should be written in markdown. Different reports may have different need
 Reports merged to the `main` branch should be considered published. At this time, the GitHub repository itself serves as the location publication.
 
 ## License
-This is made available under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
+All documents in this repository are released under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
