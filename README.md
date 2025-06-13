@@ -11,7 +11,7 @@ The [Schmidt Center for Data Science and Environment](https://dse.berkeley.edu/)
 After making a report public, repositories should link to the report from relevant pull requests and commits. If necessary, these can be included as comments included after merge.
 
 ## Standards
-Reports should be written in markdown. Different reports may have different needs so the format may be adapted as required. However, see prior reports for examples. At minimum, please ensure each report mentions the relevant CVEs, author(s), and project name. File names should follow the format `YYYY-MM-DD_Project_Incident.md`.
+Reports should be written in markdown. Different reports may have different needs so the format may be adapted as required. However, see prior reports for examples. At minimum, please ensure each report mentions the relevant CVEs, author(s), and project name. File names should follow the format `YYYYMMDD_Project_Incident.md`.
 
 ## Deployment
 Reports merged to the `main` branch should be considered published. At this time, the GitHub repository itself serves as the location publication.
