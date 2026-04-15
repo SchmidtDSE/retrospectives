@@ -83,17 +83,22 @@ Although CI / CD tests the front-end through a live browser, there was not a ste
 
 <br>
 
-## Reflection
+## Lessons Learned
 Some things went well in our security posture that prevented a larger issue but improvements are needed for reliability.
 
 ### Went well
-All of the steps taken offer security benefit and an outage is preferable to a compromised release. Additionally, integration tests did exist in the form of [WASM](https://github.com/SchmidtDSE/kigali-sim?tab=readme-ov-file#public-hosted-browser-based-app) execution of example scripts as well as checks on the final Java package ([Docker](https://github.com/SchmidtDSE/kigali-sim?tab=readme-ov-file#docker-cli) image-based validation prior to release to [Maven](https://github.com/SchmidtDSE/kigali-sim/packages/2723826)). Therefore, the core package was always reliable. Finally, prior security hardening steps prevented potential exposure for Kigali Sim in this and other recent incidents.
+Integration tests did exist in the form of [WASM](https://github.com/SchmidtDSE/kigali-sim?tab=readme-ov-file#public-hosted-browser-based-app) execution of example scripts as well as checks on the final Java package ([Docker](https://github.com/SchmidtDSE/kigali-sim?tab=readme-ov-file#docker-cli) image-based validation prior to release to [Maven](https://github.com/SchmidtDSE/kigali-sim/packages/2723826)). Therefore, the core package was always reliable. Additionally, prior security hardening steps prevented potential exposure for Kigali Sim in this and other recent incidents.
 
 ### Improvements
 Beneficial changes in CI / CD carry particular risk as there isn't a higher order mechanism to test their validity. This fell through in the front-end. **We regret deeply that the same care extended to the core package was not given to the web-based IDE.** This component is an important part of our user experience in Kigali Sim. This as well as other projects which offer a similar [programming portal](https://maggieappleton.com/programming-portals) should ensure that full "smoke tests" offer some kind of "integration test" functionality through a live web browser on the final bundle. We sincerely apologize for this oversight and, to our user community, we regret the outage.
 
 ### Looking forward
 We have already taken steps to improve our reliability practices and we will continue to extend the surface area of these checks into the future. We recognize that this expanded proactive validation prior to release is essential given that, for privacy reasons, we do not allow automated bug reporting from the live application.
+
+<br>
+
+## Design Decisions
+After discussion among our developer community at [DSE](https://dse.berkeley.edu/), we want to recognize that this incident emerged through an intentional bias in our engineering to prioritize safety. We could have avoided this issue by delaying additional hardening or, ideally, through additional automation to catch this kind of regression. Regardless, we want to reaffirm that the outage remains preferable to a compromised release. Switching to version pinned trusted third party dependencies remains the correct choice for improved security posture. In other words, though CI / CD steps should have been in place to prevent this release from reaching production, we believe the prioritization of security remains the right choice. Instead, automation should be expanded to reduce any agility cost associated with those objectives. Finally, we continue to believe that the prioritization of privacy and the intentional rejection of automated error reporting remains the right choice for Kigali Sim despite the delay in detecting this issue.
 
 <br>
 
