@@ -11,11 +11,11 @@
 
 **Report / CVE**: [CanisterWorm](https://socket.dev/blog/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages) (See also [LiteLLM vulnerability](https://www.endorlabs.com/learn/teampcp-isnt-done) and [JFrog Reporting](https://research.jfrog.com/post/canister-worm/))
 
-**Attack Timeline**: CanisterWorm was reported around March 20. A proactive hardening change which led to outage was released on Friday April 10.
+**Attack Timeline**: CanisterWorm was reported around March 20. A proactive hardening change was introduced in the codebase on April 2.
 
-**Discovery Date**: Community reported about 8am April 14, 2026 (PT).
+**Discovery Date**: Community reported outage about 8am April 14, 2026 (PT).
 
-**Impact**: An outage lasting from April 10th, 2026 (PT) to April 14th, 2026 (PT) for web-based IDE users.
+**Impact**: Full confirmed outage from April 10th, 2026 (PT) to April 14th, 2026 (PT) for all web-based IDE users. However, we assume degraded service from April 2, 2026 (PT) where some users did not see disruption right away due to cached PWA.
 
 **Status**: Closed April 14, 2026 at 10am PT with preventative measures.
 
@@ -58,7 +58,7 @@ The default target for our [Chart.js](https://www.chartjs.org/) dependency uses 
  - 2025-09-18: [Completed prior mitigations](https://github.com/SchmidtDSE/kigali-sim/pull/556)
  - 2026-03-20: CanisterWorm reported
  - 2026-03-21: Confirmed no Kigali Sim exposure to CanisterWorm
- - 2026-04-10: Pre-emptive hardening and outage
+ - 2026-04-02: Pre-emptive hardening released
  - 2026-04-14: Resolution
 
 ### Diagnosis
@@ -103,7 +103,7 @@ After discussion among our developer community at [DSE](https://dse.berkeley.edu
 <br>
 
 ## Impact Assessment
-No security or privacy risk. However, 4 days (2 workdays, 2 weekend days) outage for new users in the web-based IDE. This excluded those using a pre-loaded PWA / cached copy, local jar, or agentic AI flow, although these other pathways delayed detection.
+No security or privacy risk. However, outage for new users in the web-based IDE who did not have a cached copy of the PWA already present. This excluded those using a local jar or agentic AI flow (although these other pathways delayed detection).
 
 <br>
 
