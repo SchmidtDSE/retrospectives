@@ -1,4 +1,4 @@
-# CanisterWorm-Adjacent Outage
+# CanisterWorm-Adjacent Web-based IDE Disruption
 
 **Summary**: This retrospective documents how routine security hardening inadvertently caused an outage for new users and recently upgraded users within the Kigali Sim web-based IDE. There was no security or privacy risk to Kigali Sim users with the outage itself being the only impact.
 
